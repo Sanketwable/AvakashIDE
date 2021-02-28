@@ -10,6 +10,7 @@ import (
 
 	"github.com/go-flutter-desktop/go-flutter"
 	"github.com/pkg/errors"
+	open_file "github.com/jld3103/go-flutter-open_file"
 )
 
 // vmArguments may be set by hover at compile-time
@@ -21,6 +22,8 @@ func main() {
 		flutter.OptionVMArguments(strings.Split(vmArguments, ";")),
 		flutter.WindowIcon(iconProvider),
 	}
+	flutter.ProjectName = "Avakash IDE"
+	flutter.AddPlugin(&open_file.OpenFilePlugin{})
 	err := flutter.Run(append(options, mainOptions...)...)
 	if err != nil {
 		fmt.Println(err)
