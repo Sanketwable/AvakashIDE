@@ -35,10 +35,11 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Hover Example'),
+      appBar: AppBar( //isko change krna h
+        title: Text('File  Edit  Selection  View  Go  Run  Terminal  Help'),
       ),
       body: Container(
+         color: Colors.black87,
         child: Column(
           children: [
             Padding(
@@ -46,13 +47,13 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
               child: SelectableText.rich(
                 // this text can be copied with "Ctrl-C"
                 TextSpan(
-                  text: 'Hello', // default text style
+                  text: '', // default text style
                   children: <TextSpan>[
                     TextSpan(
-                        text: ' beautiful world',
+                        text: ' ',
                         style: TextStyle(fontWeight: FontWeight.bold)),
                     TextSpan(
-                        text: ' (should be copyable)',
+                        text: '',
                         style: TextStyle(
                             fontStyle: FontStyle.italic, fontSize: 10)),
                   ],
@@ -62,12 +63,28 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
             Padding(
               padding: new EdgeInsets.all(8.0),
               child: new Column(children: <Widget>[
-
                 Container(
-                  padding: EdgeInsets.only(left: 50, right: 20, top: 20, bottom: 20),
+                // color: Colors.grey,
+                  padding:
+                      EdgeInsets.only(left:200, right: 20, top: 20, bottom:20),
                   child: TextField(
-                    decoration: InputDecoration(hintText: 'Code Here',border: OutlineInputBorder(),),
-                    maxLines: 4,
+                    //enabled: false,
+                    style:TextStyle(
+                    fontWeight:FontWeight.bold,
+                    fontSize: 20,
+                    color:Colors.red,
+
+                  ) ,
+                    decoration: InputDecoration(
+                       filled: true,
+                      fillColor: Colors.grey[850],
+                      hintText: 'Code Here',
+                      border:
+                     OutlineInputBorder(),
+                    ),
+                    minLines: 20,//Normal textInputField will be displayed
+                    keyboardType: TextInputType.multiline,
+                    maxLines: 50,
                     focusNode: myFocus,
                     onSubmitted: (value) {
                       setState(() {
