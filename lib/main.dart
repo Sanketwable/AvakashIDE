@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Avakash IDE',
+      title: 'IDE Project',
       theme: ThemeData(
         // If the host is missing some fonts, it can cause the
         // text to not be rendered or worse the app might crash.
@@ -190,6 +190,21 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
                         },
                       ),
                     ),
+                    Container (
+                      padding: EdgeInsets.fromLTRB(200, 20, 20, 20),
+                      child : TextField(
+                      decoration: InputDecoration( 
+                      hintStyle: TextStyle(color: Colors.blue[50]),
+                      filled: true,
+                      fillColor: Colors.grey[600], 
+                      border: OutlineInputBorder(),  
+                      labelText: 'OUTPUT',  
+                      hintText: 'Your output is :',  
+                    ),  
+                     minLines: 10,
+                     maxLines: 20,
+                          ),
+                      ),
                   ]),
                 ),
               ],
