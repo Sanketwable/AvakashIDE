@@ -15,6 +15,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="https://github.com/harry-stark"><img src="https://avatars.githubusercontent.com/u/43717480?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Harsimranjeet Saini</b></sub></a><br /><a href="#infra-harry-stark" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/Sanketwable/IDE/commits?author=harry-stark" title="Tests">⚠️</a> <a href="https://github.com/Sanketwable/IDE/commits?author=harry-stark" title="Code">💻</a></td>
+    <td align="center"><a href="http://wablesanket.xyz"><img src="https://avatars.githubusercontent.com/u/43716242?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Wable Sanket</b></sub></a><br /><a href="#infra-Sanketwable" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/Sanketwable/IDE/commits?author=Sanketwable" title="Tests">⚠️</a> <a href="https://github.com/Sanketwable/IDE/commits?author=Sanketwable" title="Code">💻</a></td>
   </tr>
 </table>
 
