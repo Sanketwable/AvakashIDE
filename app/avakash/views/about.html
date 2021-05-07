@@ -1,0 +1,43 @@
+<style>
+	.about-page {
+		margin:0px;
+		/*color:#abb2bf;*/
+		font-family:system-ui;
+		align-items: center;
+		display: flex;
+		justify-content: center;
+		height: 100%;
+		width: 100%;
+		/*background-color:#282c34;*/
+	}
+</style>
+
+<script>
+	let fs = require('fs');
+	let path = require('path');
+	let version = fs.readFileSync(path.join(__dirname, '..', 'package.json'));
+	version = JSON.parse(version);
+	document.getElementById('version').innerHTML = version.version;
+</script>
+<div class = "about-page">
+	<center>
+		<img src = "../assets/icon.png" width = 100px>
+		<h1>
+			Avakash IDE 
+		</h1>
+		<h4>
+			A flexible IDE
+		</h4>
+		<h6>
+			<span id="donate-line">
+				<br/>
+				<br/>
+				<b>Final Project of CSD 328-Software Engineering Lab for the Session 2020-2021 </b>
+				<br/>
+				<br/>
+				 <big style="color: #ffffff">Made by equal contributions of Wable Sanket, Harry, Shubhang</big></a>
+				
+			</span>
+		</h6>
+	</center>
+</div>

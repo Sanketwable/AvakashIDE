@@ -1,9 +1,24 @@
 # IDE
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 An IDE written in Dart and Golang using Flutter framework and go-flutter-desktop package
-with Compilations on server side
+with Compilations on server side.
+Also includes an Electron based client app.
+
+
+## Instructions for running:
+`` $ cd app/avakash ``
+
+`` $ npm install --force ``
+
+`` $ npm start ``
+
+
+
+### Requirements:
+    Having nvm will help.
+    node version<=12.10
 
 ## Contributors ✨
 
